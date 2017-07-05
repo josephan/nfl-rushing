@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player: MyString
+  team: MyString
+  pos: MyString
+  att: 1
+  att_per_game: 1.5
+  yrds: 1
+  avg: 1.5
+  yrds_per_game: 1.5
+  td: 1
+  lng: MyString
+  first_downs: 1
+  first_downs_perc: 1.5
+  plus_twenty: 1
+  plus_forty: 1
+  fum: 1
+
+two:
+  player: MyString
+  team: MyString
+  pos: MyString
+  att: 1
+  att_per_game: 1.5
+  yrds: 1
+  avg: 1.5
+  yrds_per_game: 1.5
+  td: 1
+  lng: MyString
+  first_downs: 1
+  first_downs_perc: 1.5
+  plus_twenty: 1
+  plus_forty: 1
+  fum: 1
