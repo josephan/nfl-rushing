@@ -1,0 +1,45 @@
+<div class="content">
+  <h1>Rushing Statistics</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Player</th>
+        <th>Team</th>
+        <th>Post</th>
+        <th>Att/G</th>
+        <th>Att</th>
+        <th>Yrds</th>
+        <th>Avg</th>
+        <th>Yrds/G</th>
+        <th>TD</th>
+        <th>Lng</th>
+        <th>1st</th>
+        <th>1st%</th>
+        <th>20+</th>
+        <th>40+</th>
+        <th>FUM</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @rushing_stats.each do |stat| %>
+        <tr>
+          <td><%= stat.player           %></td>
+          <td><%= stat.team             %></td>
+          <td><%= stat.pos              %></td>
+          <td><%= stat.att              %></td>
+          <td><%= stat.att_per_game     %></td>
+          <td><%= stat.yrds             %></td>
+          <td><%= stat.avg              %></td>
+          <td><%= stat.yrds_per_game    %></td>
+          <td><%= stat.td               %></td>
+          <td><%= stat.lng              %></td>
+          <td><%= stat.first_downs      %></td>
+          <td><%= stat.first_downs_perc %></td>
+          <td><%= stat.plus_twenty      %></td>
+          <td><%= stat.plus_forty       %></td>
+          <td><%= stat.fum              %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
