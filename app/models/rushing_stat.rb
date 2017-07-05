@@ -1,6 +1,11 @@
 class RushingStat < ApplicationRecord
   require 'csv'
 
+  def self.search_by_name(name)
+    return all if name.nil? || name.empty?
+    where("player LIKE ?", "%#{name}%")
+  end
+
   def self.to_csv
     columns = self.column_names - %w{id created_at updated_at}
 
