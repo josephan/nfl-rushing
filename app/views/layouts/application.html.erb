@@ -17,6 +17,14 @@
             <h1 class="title">NFL Rushing</h1>
           </a>
         </div>
+
+        <div class="nav-right">
+          <div class="nav-item">
+            <%= link_to("Export as CSV",
+                        filter_path(filter_csv_params(params)),
+                        class: "button is-primary") %>
+          </div>
+        </div>
       </div>
     </nav>
 

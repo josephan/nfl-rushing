@@ -1,4 +1,26 @@
 <div class="content">
+  <div class="search-form">
+    <h2>Filter</h2>
+    <%= form_tag(filter_path, method: "get") do %>
+      <%= text_field_tag(:player_name, nil,
+                         placeholder: "Player Name",
+                         class: "input") %>
+      <span class="select">
+        <%= select_tag :yrds,
+            options_for_select(sort_options('Total Rushing Yards')) %>
+      </span>
+      <span class="select">
+        <%= select_tag :lng, 
+            options_for_select(sort_options('Longest Rush')) %>
+      </span>
+      <span class="select">
+        <%= select_tag :td, 
+            options_for_select(sort_options('Total Rushing Touchdowns')) %>
+      </span>
+      <%= submit_tag "Search", class: "button is-primary" %>
+    <% end %>
+  </div>
+  
   <h1>Rushing Statistics</h1>
   <table class="table">
     <thead>
