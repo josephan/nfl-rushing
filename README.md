@@ -1,24 +1,7 @@
-# README
+## Installation and running this solution
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* requires rails 2.2.2 or newer (Rails 5 app)
+* install all the required gems by running `bundle`
+* run the server with `rails s`
+* visit `http://localhost:3000` and everything is on the home page!
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
